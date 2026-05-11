@@ -1,9 +1,9 @@
 This repository contains the complete analytical code encompassing:
 
-data pre-processing and descriptives
+1. data pre-processing and descriptives
 
-main analyses (inverse probability of treatment weighting)
+2. main analyses (inverse probability of treatment weighting)
 
-sensitivity analyses
+3. sensitivity analyses
 
-tables and figures
+4. tables and figures
