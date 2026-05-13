@@ -989,7 +989,7 @@ plot_domain_spline <- function(curves_df, xlim, fill_col, line_col, xlab = NULL)
     labs(x = xlab, y = NULL) +
     theme_classic() +
     theme(
-      text             = element_text(family = "Times New Roman", size = 26),
+      text             = element_text(family = "Times New Roman", size = 18),
       strip.text       = element_text(face = "bold"),
       strip.background = element_blank()
     )
@@ -1048,7 +1048,7 @@ y_axis_label <- ggplot() +
     axis.title.y = element_text(
       angle  = 90,
       family = "Times New Roman",
-      size   = 26
+      size   = 18
     )
   )
 
@@ -1291,8 +1291,8 @@ make_domain_gender_spline <- function(df, ribbon_fill, line_color, x_lab = NULL,
     labs(x = x_lab, y = NULL) +
     theme_classic() +
     theme(
-      text             = element_text(family = "Times New Roman", size = 26),
-      strip.text       = element_text(face = "bold"),
+      text             = element_text(family = "Times New Roman", size = 18),
+      strip.text       = element_text(face = "bold"),0
       strip.background = element_blank(),
       legend.position  = "none",
       legend.title     = element_blank()
@@ -1389,7 +1389,7 @@ y_axis_label_gender <- ggplot() +
     axis.title.y = element_text(
       angle  = 90,
       family = "Times New Roman",
-      size   = 26
+      size   = 18
     )
   )
 
