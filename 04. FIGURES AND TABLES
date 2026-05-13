@@ -160,7 +160,7 @@ table1_gt <- table1_rows %>%
 
 table1_gt
 
-####################################
+#####################################
 #### TABLE 2: CORRELATION MATRIX #### 
 #####################################
 
@@ -187,6 +187,13 @@ labels_t1 <- labels_t1[vars_t1]
 # 2) Prepare numeric data for correlations
 df_cor <- analysis_data %>%
   select(all_of(vars_t1)) %>%
+  mutate(
+    gender_t1 = case_when(
+      as.character(gender_t1) == "men" ~ 0,
+      as.character(gender_t1) == "women" ~ 1,
+      TRUE ~ NA_real_
+    )
+  ) %>%
   mutate(across(
     everything(),
     ~ {
